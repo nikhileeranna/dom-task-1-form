@@ -1,0 +1,49 @@
+body {
+    padding: 20px 100px 20px 100px;
+    text-align: center;
+    box-align: center;
+    background:rgb(238, 243, 230);    
+}
+@media (max-width: 500px)
+{
+    body{
+        position: static;
+    }
+    .row
+    {
+        padding: 40px;
+        width: fit-content;
+    }
+}
+.row
+{
+    background-color: white;
+    border: solid 1px rgb(206, 200, 200) ;
+    border-radius: 1rem;
+    margin:10px;
+    page-break-inside: avoid;
+    
+}
+.col-6
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+form {
+    line-height: 2em;
+    position: static;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table,
+tr,
+td {
+    border: 1px solid black;
+    text-align: center;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM-HTML</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <h1>Choice of Foods</h1>
+    <form onsubmit="updateTable();return false;" required>
+       <div class="container"> 
+            <div class="row">
+            <div class="col-6"> <label for="fname" id="bold">First Name</label></div>
+            <div class="col-4"> <input type="text" id="fname" required /></div>
+            </div>
+            <div class="row">
+                <div class="col-6"> <label for="lname" id="bold">Last Name</label></div>
+                <div class="col-4"> <input type="text" id="lname" required /></div>
+            </div>
+            <div class="row">
+                <div class="col-6">  <label for="gender" id="bold">Gender</label></div>
+                <div class="col-4"> 
+                    <input type="radio" name="gender" id="gender" value="Male" required/>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="gender" value="Female" required/>
+                    <label for="female">Female</label></br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">  <label for="food" id="bold">Food</label></div>
+                <div class="col-4"> 
+                    <input type="checkbox" name="Chicken Biryani" id="food1"  value="Chicken Biryani" />
+                    <label for="Chicken Biryani">Chicken Biryani</label></br>
+                    <input type="checkbox" name="Mutton Biryani" id="food2"  value="Mutton Biryani" />
+                    <label for="Mutton Biryani">Mutton Biryani</label></br>
+                    <input type="checkbox" name="Chicken 65" id="food3"  value="Chicken 65" />
+                    <label for="Chicken 65">Chicken 65</label></br>
+                    <input type="checkbox" name="Panner Tikka" id="food4"  value="Panner Tikka" />
+                    <label for="Panner Tikka">Panner Tikka</label></br>
+                    <input type="checkbox" name="Meals" id="food5" value="Meals" />
+                    <label for="Meals">Meals</label></br>
+                    <input type="checkbox" name="ice" id="food6" value="Ice Cream" />
+                    <label for="ice">Ice-cream</label></br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6"> <label for="address" id="bold">Address</label></div>
+                <div class="col-4"> <input type="text" id="address" required /></div>
+            </div>
+            <div class="row">
+                <div class="col-6"> <label for="pin" id="bold">Pin-Code</label></div>
+                <div class="col-4"> <input type="text" id="pin" required /></div>
+            </div>
+            <div class="row">
+                <div class="col-6"> <label for="state" id="bold">State</label></div>
+                <div class="col-4"> <input type="text" id="state" required /></div>
+            </div>
+            <div class="row">
+                <div class="col-6"> <label for="country" id="bold">Country</label></div>
+                <div class="col-4"> <input type="text" id="country" required /></div>
+            </div>
+        </div>
+        <input type="submit" value="Add to Table" />
+    </form>
+    <table id="table">
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Gender</td>
+            <td>Food</td>
+            <td>Address</td>
+            <td>Pin-Code</td>
+            <td>State</td>
+            <td>Country</td>
+        </tr>
+    </table>
+</body>
+
+</html>
